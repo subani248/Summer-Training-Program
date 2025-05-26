@@ -1,4 +1,5 @@
 Project Content
+
 This project comprises a Flask-based backend application designed for managing student expenses, primarily within a mess or shared living arrangement. The system facilitates the following core functionalities through a RESTful API and basic web page rendering:
 
 Student Management: Registration of new students into the system.
@@ -10,6 +11,7 @@ Basic Web Interface: Simple HTML pages are rendered for basic user interactions 
 
 Project Code
 The project code provided is a Flask application that serves as the backend for a student expense management system. It handles student registration, attendance tracking, monthly expense calculation and recording, and provides login functionalities for both students and administrators. It also includes basic HTML templating for web pages.
+
 
 from flask import Flask, request, jsonify, render_template, redirect, url_for
 from flask_mysqldb import MySQL
@@ -288,6 +290,8 @@ if __name__ == "__main__":
 
 
 Key Technologies
+
+
 Flask: A micro web framework for Python, used for building the RESTful API endpoints and serving web pages.
 Flask-MySQLdb: Provides MySQL connectivity for Flask applications, enabling interaction with the database.
 Flask-CORS: A Flask extension for handling Cross-Origin Resource Sharing (CORS), allowing requests from different origins (e.g., a frontend application running on a different port).
@@ -298,6 +302,8 @@ HTML/CSS/JavaScript (Frontend - Implied): Although not explicitly provided in th
 
 
 Description
+
+
 This project implements a Student Expense Management System designed to track and manage monthly mess or other collective expenses for students. The system provides functionalities for:
 
 Student Registration: Allows new students to be registered into the system with their ID, name, branch, and phone number.
@@ -310,6 +316,8 @@ Basic Web Pages: The application also serves simple HTML pages for user interact
 The system uses a MySQL database to persist all data. Security is enhanced through bcrypt for password hashing and JWT for token-based authentication.
 
 Output
+
+
 The project produces API responses in JSON format and serves HTML pages for the user interface.
 
 Examples of JSON Outputs:
@@ -322,6 +330,9 @@ Examples of JSON Outputs:
 
 
 Further Research / Future Enhancements
+
+
+
 Robust Error Handling and Logging: Implement more detailed error logging to help debug issues in production environments. Improve client-side error feedback.
 Input Validation: Implement more thorough input validation for all API endpoints to prevent common vulnerabilities like SQL injection and ensure data integrity (e.g., validating phone number format, ensuring days_present is within a valid range).
 Admin Management: Add functionalities for administrators to view, update, or delete student information, attendance records, and past monthly expenses.
