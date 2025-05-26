@@ -1,3 +1,5 @@
+Project Report: Student Expense Management System
+
 Project Content
 
 This project comprises a Flask-based backend application designed for managing student expenses, primarily within a mess or shared living arrangement. The system facilitates the following core functionalities through a RESTful API and basic web page rendering:
